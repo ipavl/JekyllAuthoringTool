@@ -6,7 +6,7 @@ markdown files (.md) suitable for immediate usage in most
 [Jekyll](http://jekyllrb.com) blogs/websites.
 
 Via a webform, the user is prompted for the post's title, permalink 
-(usually only used for non-blog posts), layout (the default is "default"), 
+(usually only used for non-blog posts), layout (the default is "post"), 
 and the post's content. Upon clicking the "generate" button, the user is prompted 
 to download a text file that includes all of the above information formatted 
 correctly, including the date the post was generated and a file name in the 

@@ -11,7 +11,7 @@
 	<%= form_tag jat_save_path do %>
 		<label>title:</label><br /><%= text_field_tag(:title, "", size: "125") %><br />
 		<label>permalink:</label><br /><%= text_field_tag(:permalink, "", size: "125") %><br />
-		<label>layout:</label><br /><%= text_field_tag(:layout, "default", size: "125") %><br />
+		<label>layout:</label><br /><%= text_field_tag(:layout, "post", size: "125") %><br />
 		<label>content:</label><br /><%= text_area_tag(:content, "", size: "111x15") %><br/ >
 		<label>&nbsp;</label><%= submit_tag "generate" %> | JAT by <a href="https://github.com/ipavl">ipavl</a>
 	<% end %>
