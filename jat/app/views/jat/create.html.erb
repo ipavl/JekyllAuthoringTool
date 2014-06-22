@@ -1,7 +1,14 @@
-<%= form_tag jat_save_path do %>
-  title: <%= text_field_tag(:title) %><br />
-  layout: <%= text_field_tag(:layout, "default") %><br />
-  content:<br/>
-  <%= text_area_tag(:content, "", size: "130x25") %><br/ >
-  <%= submit_tag "generate" %>
-<% end %>
+<div class="form">
+	<h1 class="text">Jeykll Authoring Tool (JAT)</h1>
+	
+	<p class="text">The <strong>Jekyll Authoring Tool</strong> (JAT) will produce <a href="http://jekyllrb.com">Jekyll</a>-style files for your 
+	website/blog based on what you enter below. Upon clicking "generate", a file will be produced that is formatted for placement in your _posts 
+	directory. You may use Markdown for the "content" section.</p>
+
+	<%= form_tag jat_save_path do %>
+		<label>title:</label><br /><%= text_field_tag(:title, "", size: "125") %><br />
+		<label>layout:</label><br /><%= text_field_tag(:layout, "default", size: "125") %><br />
+		<label>content:</label><br /><%= text_area_tag(:content, "", size: "111x25") %><br/ >
+		<label>&nbsp;</label><%= submit_tag "generate" %>
+	<% end %>
+</div>
