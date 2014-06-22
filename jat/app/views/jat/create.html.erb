@@ -3,12 +3,16 @@
 	
 	<p class="text">The <strong>Jekyll Authoring Tool</strong> (JAT) will produce <a href="http://jekyllrb.com">Jekyll</a>-style files for your 
 	website/blog based on what you enter below. Upon clicking "generate", a file will be produced that is formatted for placement in your _posts 
-	directory. You may use Markdown for the "content" section. The date will automatically be included.</p>
+	directory. The date will automatically be included in the file, and the file's name will default to the syntax commonly used for Jekyll blog posts 
+	("YYYY-MM-DD-hyphenated-title.md"), but you can change that.</p>
+	
+	<p class="text">The permalink field is usually only used for non-blog pages. Layout will vary by template.</p>
 
 	<%= form_tag jat_save_path do %>
 		<label>title:</label><br /><%= text_field_tag(:title, "", size: "125") %><br />
+		<label>permalink:</label><br /><%= text_field_tag(:permalink, "", size: "125") %><br />
 		<label>layout:</label><br /><%= text_field_tag(:layout, "default", size: "125") %><br />
-		<label>content:</label><br /><%= text_area_tag(:content, "", size: "111x25") %><br/ >
+		<label>content:</label><br /><%= text_area_tag(:content, "", size: "111x15") %><br/ >
 		<label>&nbsp;</label><%= submit_tag "generate" %> | JAT by <a href="https://github.com/ipavl">ipavl</a>
 	<% end %>
 </div>

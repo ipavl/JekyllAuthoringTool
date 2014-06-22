@@ -7,6 +7,7 @@ class JatController < ApplicationController
     
         @title = params[:title]
         @layout = params[:layout]
+        @permalink = params[:permalink]
         @date = time.inspect
         @content = params[:content]
      
@@ -20,6 +21,7 @@ class JatController < ApplicationController
         @data = "---\n" \
                 + "layout: " + @layout + "\n" \
                 + "title: " + @title + "\n" \
+                + "permalink: " + @permalink + "\n" \
                 + "date: " + @date + "\n" \
                 + "---\n\n" \
                 + @content
