@@ -13,3 +13,10 @@ correctly, including the date the post was generated and a file name in the
 format of "YYYY-MM-DD-hyphenated-title.md", which is typically used by Jekyll 
 sites for blog posts in the _posts directory (other types of pages can be simply 
 saved as <something>.md and placed in the appropriate alternate directory).
+
+Usage
+-----
+
+If you have Ruby/Ruby on Rails installed, navigate to the "jat" directory and 
+start a Rails server with `rails s` (or `rails start`), and then use a web 
+browser to navigate to http://localhost:3000/jat/create to view the webform.
